@@ -2,30 +2,23 @@
 
 This story was created with [Spectate](https://github.com/spec-journalism/spectate).
 
+## Setup
+
+Run `spectate clone SLUG`, which will clone the repository `spec-journalism/SLUG` into a new directory named `SLUG` and copy over Google Docs keys. Make sure you have first completed the [prerequisites and setup instructions](https://github.com/spec-journalism/spectate#prerequisites) for Spectate.
+
 ## Usage
 
-Make sure you have completed the setup and creation instructions for Spectate. To start the development server, run:
-```
-npm run dev
-```
+Make sure you are inside the project directory.
 
-To re-download the Google Doc, run:
-```
-make download
-```
+To start the development server, run `npm run dev`.
+
+To re-download the Google Doc, run `make download`.
 
 ## Deploying to the web
 
 ### GitHub Pages
 
-1. Create a `gh-pages` branch, return to `master`, and set up the worktree.
-```
-git checkout -b gh-pages
-git checkout master
-make clean
-```
-
-2. Run `make deploy-gh`.
+Run `spectate gh-deploy`, which will ensure that a `dist/` to `gh-pages` working tree exists, and then push changes to `gh-pages`.
 
 ### Arc
 
